@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" charset="utf-8" lang="de" />
+        <link rel="stylesheet" href="style.css" >
+        <title>Mein Portfolio</title>
+    </head>
+    <body>
+        <nav class="header__container sticky">
+            <!-- <nav> -->
+
+            
+            <div class="header__profile">
+                <a href="#home"><img class="header__profile__pic" src="./images/liem-dang.jpg" alt="Liem Dang" /></a>
+                <a  href="#home"><p class="header__profile__name">Hoang Liem Dang</p></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about_me">Über mich</a></li>
+                <li><a href="#my_projects">Projekte</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        <!-- </nav> -->
+        </nav>
+        <main>
+            <div id="home" class="home__container">
+                <div class="home__text">
+                    <p class="home__text__intro">Hallo, ich bin Liem</pc>
+                    <h1 class="home__text__krass">Ich gestalte Webseiten.</h1>
+                    <p class="home__text__what">Als Frontend Entwickler sorge ich dafür, dass ihre Webseite interaktiv und responsive ist.</p>
+                </div>
+                <img src="./images/devices.jpg" alt="devices" />
+            </div>
+        </main>
+        <div id="about_me" class="aboutMe__container">
+            <div class="aboutMe__section">
+                <div class="aboutMe__text">
+                    <p class="home__text__intro">Über mich</p>
+                    <p class="home__text__what">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Rem tempora tempore dolorem consequatur fuga id unde corporis repudiandae 
+                        voluptatum possimus? Neque molestias tempora veniam itaque ea qui, 
+                        perferendis aliquam mollitia cum possimus dicta architecto quibusdam ipsum. 
+                        Porro eaque blanditiis tempora? Aspernatur aliquam veritatis nobis nihil vero 
+                        asperiores recusandae repudiandae hic!
+                    </p>
+                </div>
+                <picture>
+                    <source class="aboutMe__image" media="(min-width: 801px)" srcset="./images/liem-about.jpg">
+                    <source class="aboutMe__image" srcset="./images/liem-dang.jpg">
+                    <img class="aboutMe__image" src="./images/liem-about.jpg" alt="" />
+                </picture>
+                <!-- <img class="aboutMe__image" src="./images/liem-about.jpg" alt="liem-dang" /> -->
+            </div>
+        </div>
+        <div id="my_projects" class="projects__container">
+            <h1>Meine Projekte</h1>
+
+            <div class="projects__images">
+                <a class="project__link" href="https://liem-pianopro.web.app/">
+                    <div 
+                        class="textOverImage"
+                        style="background-image:url(./images/pianopro.JPG)" 
+                        data-text="Piano Anmeldeseite">
+                    </div> 
+                </a> 
+
+                <a class="project__link"  href="https://liems-pokedex.web.app/">
+                    <div 
+                        class="textOverImage"
+                        style="background-image:url(./images/pokedex.JPG)" 
+                        data-text="Pokedex App">
+                    </div>
+                </a>
+                <a class="project__link"  href="https://liems-memory.web.app/">
+                    <div 
+                        class="textOverImage"
+                        style="background-image:url(./images/Memory.JPG)" 
+                        data-text="Memory für 2 Spieler">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+    
+</html>
