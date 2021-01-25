@@ -11,7 +11,7 @@
 
             
             <div class="header__profile">
-                <a href="#home"><img class="header__profile__pic" src="./images/liem-dang.jpg" alt="Liem Dang" /></a>
+                <a href="#home"><img class="pic__height header__profile__pic" src="./images/liem-dang.jpg" alt="Liem Dang" /></a>
                 <a  href="#home"><p class="header__profile__name">Hoang Liem Dang</p></a>
             </div>
             
@@ -32,10 +32,10 @@
             <div id="home" class="home__container">
                 <div class="home__text">
                     <p class="home__text__intro">Hallo, ich bin Liem</pc>
-                    <h1 class="home__text__krass">Ich gestalte Webseiten.</h1>
+                    <h1>Ich gestalte Webseiten.</h1>
                     <p class="home__text__what">Als Frontend Entwickler sorge ich dafür, dass ihre Webseite interaktiv und responsive ist.</p>
                 </div>
-                <img src="./images/devices.jpg" alt="devices" />
+                <img class="home__image" src="./images/devices.jpg" alt="devices" />
             </div>
         </main>
         <div id="about_me" class="aboutMe__container">
@@ -55,14 +55,12 @@
                     <source class="aboutMe__image" srcset="./images/liem-dang.jpg">
                     <img class="aboutMe__image" src="./images/liem-about.jpg" alt="" />
                 </picture>
-                <!-- <img class="aboutMe__image" src="./images/liem-about.jpg" alt="liem-dang" /> -->
             </div>
         </div>
         <div id="my_projects" class="projects__container">
             <h1>Meine Projekte</h1>
-
             <div class="projects__images">
-                <a class="project__link" href="https://liem-pianopro.web.app/">
+                <a class="project__link" target="_blank" href="https://liem-pianopro.web.app/">
                     <div 
                         class="textOverImage"
                         style="background-image:url(./images/pianopro.JPG)" 
@@ -70,14 +68,15 @@
                     </div> 
                 </a> 
 
-                <a class="project__link"  href="https://liems-pokedex.web.app/">
+                <a class="project__link" target="_blank" href="https://liems-pokedex.web.app/">
                     <div 
                         class="textOverImage"
                         style="background-image:url(./images/pokedex.JPG)" 
                         data-text="Pokedex App">
                     </div>
                 </a>
-                <a class="project__link"  href="https://liems-memory.web.app/">
+                
+                <a class="project__link" target="_blank"  href="https://liems-memory.web.app/">
                     <div 
                         class="textOverImage"
                         style="background-image:url(./images/Memory.JPG)" 

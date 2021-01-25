@@ -24,6 +24,7 @@ body {
   height: 8vh;
   width: 100%;
   background-color: var(--light);
+  z-index: 99;
 }
 a {
   text-decoration: none;
@@ -36,10 +37,11 @@ a {
 }
 
 .header__profile__pic {
-  width: 50px;
+  width: 30px;
   margin: auto 10px auto 30px;
   border-radius: 50%;
 }
+
 .header__profile__name {
   margin: auto 0;
   color: var(--dark);
@@ -79,7 +81,7 @@ ul > li > a {
 
 .home__container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   margin-top: 8vh;
   justify-content: center;
@@ -106,7 +108,7 @@ ul > li > a {
 }
 
 .aboutMe__container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,7 +138,6 @@ ul > li > a {
   height: 92vh;
   text-align: center;
   width: 100%;
-  z-index: 0;
 }
 .projects__container > h1 {
   padding: 20px 0;
@@ -199,40 +200,44 @@ ul > li > a {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .home__text {
     width: 80%;
   }
-  .home__text__what {
-    margin-top: 30px;
+
+  .home__image {
+    width: 250px !important;
   }
+
   .aboutMe__section {
     flex-direction: column;
     height: 80vh;
   }
+
   .aboutMe__text {
     width: 80%;
     order: 2;
     margin: auto;
   }
+
   .aboutMe__image {
-    max-width: 250px;
+    max-width: 150px;
     display: block;
     margin: auto;
     order: 1;
   }
 }
+
 @media screen and (max-width: 600px) {
-  /* body {
-    overflow: hidden;
-  } */
   .project__link {
     height: inherit;
     margin: 10px 0;
-    z-index: -1;
   }
+
   .header__profile {
     width: 80%;
   }
+
   .nav-links {
     width: 60%;
     position: absolute;
@@ -249,16 +254,20 @@ ul > li > a {
   .nav-links li {
     opacity: 0;
   }
+
   .burger {
     display: block;
     cursor: pointer;
   }
+
   .home__container img {
     width: 90%;
   }
+
   .aboutMe__text {
     width: 100%;
   }
+
   .textOverImage,
   .project__link {
     width: 95%;
@@ -285,9 +294,11 @@ ul > li > a {
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 3.5px);
 }
+
 .toggle .line2 {
   opacity: 0;
 }
+
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -3.5px);
 }
