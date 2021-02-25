@@ -4,14 +4,15 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.project__link {
-  height: 250px;
-  width: 400px;
-}
-
 body {
   height: 100%;
 }
+.project__link {
+  height: 250px;
+  width: 400px;
+  margin: 20px 0;
+}
+
 :root {
   --blue: #425af5;
   --light: #f7f7f7f7;
@@ -87,17 +88,19 @@ ul > li > a {
   justify-content: center;
 }
 .home__text {
-  width: 40%;
+  width: 35%;
   color: black;
   font-size: 1.2rem;
+  margin-right: 20px;
 }
 .home__text__intro {
   color: var(--red);
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
-.home__text__what {
+.text__description {
   color: #4d4c4c;
   margin-top: 15px;
   line-height: 1.8rem;
@@ -134,10 +137,10 @@ ul > li > a {
 }
 
 .projects__container {
-  margin-top: 8vh;
+  margin: 20px auto 20px auto;
   height: 92vh;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 .projects__container > h1 {
   padding: 20px 0;
@@ -148,12 +151,13 @@ ul > li > a {
   justify-content: space-around;
   flex-wrap: wrap;
   z-index: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .textOverImage {
   position: relative;
   height: 250px;
-  /* width: 100%; */
   width: 400px;
   background-size: 100%;
   background-position: center;
@@ -195,7 +199,7 @@ ul > li > a {
   font-weight: bold;
   font-size: 1.5em;
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .home__container {
     flex-direction: column;
     justify-content: space-evenly;
@@ -206,7 +210,7 @@ ul > li > a {
   }
 
   .home__image {
-    width: 250px !important;
+    width: 250px;
   }
 
   .aboutMe__section {
@@ -226,14 +230,17 @@ ul > li > a {
     margin: auto;
     order: 1;
   }
+  .projects__images {
+    width: 100%;
+  }
+  .textOverImage,
+  .project__link {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .project__link {
-    height: inherit;
-    margin: 10px 0;
-  }
-
   .header__profile {
     width: 80%;
   }
@@ -278,6 +285,20 @@ ul > li > a {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+.projects__container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.project__images {
+  width: 100%;
+}
+.textOverImage,
+.project__link {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes navLinkFade {
